@@ -5271,6 +5271,30 @@ SQL> SELECT CAS
 ----------
 	 8
 	 8
+	 
+SQL> SET LINESIZE 130
+SQL> SELECT A,CT,CL,CP,CT+CL+CP AS CREDITOS_TOTALES
+  2  FROM ASIGNATURA;
+
+A							   CT	      CL	 CP CREDITOS_TOTALES
+-------------------------------------------------- ---------- ---------- ---------- ----------------
+BASES DE DATOS						    3	     1.5	1.5		   6
+INTELIGENCIA ARTIFICIAL 				  1.5	       3	1.5		   6
+ALMACENES DE DATOS					  1.5	     1.5	  0		   3
+MINERIA DE DATOS					  1.5	     1.5	  0		   3
+INFORMATICA BASICA					    3	     1.5	1.5		   6
+ALGEBRA 						    3	       0	  3		   6
+CALCULO 						    3	       0	  3		   6
+OPTIMIZACION						    3	     1.5	1.5		   6
+GESTION DE RIESGOS					    3	       3	  0		   6
+ASTRONOMIA						    3	     1.5	1.5		   6
+ENSENANZA DE LA MATEMATICA				    6	       0	  0		   6
+
+A							   CT	      CL	 CP CREDITOS_TOTALES
+-------------------------------------------------- ---------- ---------- ---------- ----------------
+ANALISIS COMPLEJO					  4.5	       0	  3		 7.5	
+
+12 rows selected.
 
 SQL> COMMIT WORK
   2  ;
